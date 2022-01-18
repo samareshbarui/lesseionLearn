@@ -1,0 +1,4 @@
+Bundle-Name: insta-portlet
+Bundle-SymbolicName: insta.portlet
+Bundle-Version: 1.0.0
+Export-Package: insta.portlet.constants

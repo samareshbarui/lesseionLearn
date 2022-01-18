@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+
+<model-hints>
+	<model name="jwc.insta.model.HandleAPIKeys">
+		<field name="handleAPIKeyId" type="long" />
+		<field name="handleName" type="String" />
+		<field name="pageKey" type="String" />
+		<field name="apiKey" type="String">
+			<hint name="max-length">10000</hint>
+		</field>
+		<field name="instagramWidgetFlag" type="boolean" />
+	</model>
+	<model name="jwc.insta.model.InstaOtherDetails">
+		<field name="otherDetid" type="long" />
+		<field name="instaHandleName" type="String" />
+		<field name="followUsLink" type="String" />
+	</model>
+	<model name="jwc.insta.model.InstaSiteImages">
+		<field name="instaSiteImageId" type="long" />
+		<field name="pageKey" type="String" />
+		<field name="mediaUrl" type="String">
+			<hint name="max-length">50000000</hint>
+		</field>
+		<field name="instaimageUrl" type="String">
+			<hint name="max-length">10000000</hint>
+		</field>
+		<field name="timestamp" type="String" />
+		<field name="otherDetid" type="long" />
+	</model>
+</model-hints>

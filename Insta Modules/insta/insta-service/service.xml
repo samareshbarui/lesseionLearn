@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<!DOCTYPE service-builder PUBLIC "-//Liferay//DTD Service Builder 7.3.0//EN" "http://www.liferay.com/dtd/liferay-service-builder_7_3_0.dtd">
+
+<service-builder dependency-injector="ds" package-path="jwc.insta">
+	<namespace>JWC</namespace>
+	<!--<entity data-source="sampleDataSource" local-service="true" name="Foo" remote-service="false" session-factory="sampleSessionFactory" table="foo" tx-manager="sampleTransactionManager uuid="true"">-->
+	<entity local-service="true" name="HandleAPIKeys"  remote-service="false">
+
+	    <column name="handleAPIKeyId" primary="true" type="long" id-type="increment" />
+	    <column name="handleName" type="String" />
+        <column name="pageKey" type="String" />
+        <column name="apiKey" type="String" />
+        <column name="instagramWidgetFlag" type="boolean" />
+
+		<!-- Finder methods -->
+
+		<finder name="PageKey" return-type="HandleAPIKeys">
+			<finder-column name="pageKey" />
+		</finder>
+
+	</entity>
+	
+	
+	<entity local-service="true" name="InstaSiteImages"  remote-service="false">
+
+	    <column name="instaSiteImageId" primary="true" type="long" id-type="increment" />
+	    <column name="pageKey" type="String" />
+        <column name="mediaUrl" type="String" />
+        <column name="instaimageUrl" type="String" />
+        <column name="timestamp" type="String" />
+		<column type="long" name="otherDetid"></column>
+
+		<!-- Finder methods -->
+
+		<finder name="InstaimageUrl" return-type="String">
+			<finder-column name="instaimageUrl" />
+		</finder>
+		
+		<finder name="pageKey" return-type="Collection">
+			<finder-column name="pageKey" />
+		</finder>
+		
+		<finder name="linksTimestamp" return-type="InstaSiteImages">
+			<finder-column name="instaimageUrl" />
+			<finder-column name="mediaUrl" />
+			<finder-column name="timestamp" />
+		</finder>
+
+	</entity>
+	
+	<entity name="InstaOtherDetails" local-service="true" remote-service="false">
+		<column type="long" name="otherDetid" primary="true" id-type="increment"></column>
+		<column type="String" name="instaHandleName"></column>
+		<column name="followUsLink" type="String"></column>
+	</entity>
+</service-builder>

@@ -1,0 +1,10 @@
+Bundle-Name: insta-api
+Bundle-SymbolicName: jwc.insta.api
+Bundle-Version: 1.0.0
+Export-Package:\
+	jwc.insta.exception,\
+	jwc.insta.model,\
+	jwc.insta.service,\
+	jwc.insta.service.persistence
+-check: EXPORTS
+-includeresource: META-INF/service.xml=../insta-service/service.xml
