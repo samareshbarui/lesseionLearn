@@ -1,0 +1,4 @@
+Bundle-Name: Sign-in-Custom-Slider
+Bundle-SymbolicName: Sign.in.Custom.Slider
+Bundle-Version: 1.0.0
+Export-Package: Sign.in.Custom.Slider.constants

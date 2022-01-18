@@ -1,0 +1,4 @@
+Bundle-Name: Sign-In-Slider-Api
+Bundle-SymbolicName: Sign.In.Slider.Api
+Bundle-Version: 1.0.0
+Liferay-Configuration-Path: /configuration

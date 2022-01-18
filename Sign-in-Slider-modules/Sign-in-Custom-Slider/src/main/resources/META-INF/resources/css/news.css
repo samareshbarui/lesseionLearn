@@ -1,0 +1,200 @@
+.newssection {
+	padding: 20px;
+}
+
+.newsheader {
+	padding: 5px 0px;
+	border-bottom: 1px solid #0c50a3;
+	height: auto;
+	overflow: hidden;
+}
+
+.newsheader span {
+	float: left;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.newsheader button {
+	float: right;
+	background: #0c50a3;
+	width: 100px;
+	padding: 7px 10px;
+	color: #fff;
+	border: 1px solid #0c50a3;
+}
+
+.newsheader button:focus {
+	outline: none;
+	border-color: #0c50a3;
+}
+
+.filterdiv {
+	width: 100%;
+	padding: 10px 0px;
+	height: 100%;
+	overflow: hidden;
+	font-size: 14px;
+}
+
+.filterdiv .first span {
+	padding: 0px 20px 0px 20px;
+	border-right: 1px solid #000;
+}
+
+.filterdiv .first span:last-child {
+	padding: 0px 20px 0px 20px;
+	border-right: none;
+}
+
+.filterdiv .first {
+	float: left;
+	width: 33%;
+	text-align: left;
+}
+
+.filterdiv .second {
+	float: left;
+	width: 34%;
+	text-align: center;
+}
+
+.filterdiv .second span {
+	padding: 0px 10px 0px 10px;
+}
+
+.filterdiv .second span:last-child {
+	padding: 0px 10px 0px 10px;
+	border-right: none;
+}
+
+.filterdiv .third {
+	float: left;
+	width: 33%;
+	text-align: right;
+}
+
+.filterdiv .third span {
+	padding: 0px 10px 0px 10px;
+}
+
+.filterdiv span {
+	padding: 0px 20px;
+}
+
+.filterdiv span a {
+	color: #000;
+	font-size: 15px;
+}
+
+.totalarticle {
+	padding: 10px 0px;
+	margin: 30px 0px 0px 0px;
+	border-bottom: 1px solid #c4c4c4;
+}
+
+.check {
+	width: 18px;
+	height: 18px;
+	margin: 0px 15px 0px 0px;
+	float: left;
+}
+
+.articlebox {
+	position: relative;
+}
+
+.article {
+	padding: 20px 0px;
+	border-bottom: 1px solid #f3f3f3;
+	height: 100%;
+	overflow: hidden;
+}
+
+.lefttext {
+	float: left;
+	font-size: 16px;
+}
+
+.lefttext h4 {
+	padding: 0px 0px;
+	font-size: 16px;
+	margin: 0px 0px 7px 0px;
+	font-weight: normal;
+}
+
+.lefttext h3 {
+	font-size: 14px;
+	padding: 0px 0px;
+	margin: 0px 0px 7px 0px;
+	font-weight: normal;
+}
+
+.lefttext h3 span {
+	margin: 0px 15px;
+}
+
+.lefttext h3 span a {
+	color: #000;
+}
+
+.rightbtn {
+	float: right;
+	text-align: right;
+}
+
+.rightbtn button {
+	width: 100px;
+}
+
+.rightbtn button:focus {
+	outline: none;
+	border-color: #bfbfbf;
+}
+
+.rightbtn div {
+	text-align: center;
+	padding: 7px 0px;
+}
+
+.rightbtn div a {
+	margin: 0px 0px;
+	color: #000;
+	font-size: 15px;
+}
+
+.rightbtn div span {
+	margin: 0px 7px;
+}
+
+.greenbtn {
+	background: #92d050;
+	padding: 7px 10px;
+	color: #fff;
+	border: 1px solid #bfbfbf;
+	margin: 0px auto;
+}
+
+.greybtn {
+	background: #bfbfbf;
+	padding: 7px 10px;
+	color: #fff;
+	border: 1px solid #bfbfbf;
+	margin: 0px auto;
+}
+
+.yellowbtn {
+	background: #ffc000;
+	padding: 7px 10px;
+	color: #fff;
+	border: 1px solid #bfbfbf;
+	margin: 0px auto;
+}
+
+.whtbtn {
+	background: #fff;
+	padding: 7px 10px;
+	color: #000;
+	border: 1px solid #bfbfbf;
+	margin: 0px auto;
+}
