@@ -1,0 +1,4 @@
+Bundle-Name: Social-Sharing-Module
+Bundle-SymbolicName: Social.Sharing.Module
+Bundle-Version: 1.0.0
+Export-Package: Social.Sharing.Module.constants
