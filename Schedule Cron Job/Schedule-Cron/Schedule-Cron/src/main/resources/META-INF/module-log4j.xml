@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+ 
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/">
+    <appender class="org.apache.log4j.rolling.RollingFileAppender" name="FILE">
+        <rollingPolicy class="org.apache.log4j.rolling.TimeBasedRollingPolicy">
+            <param name="FileNamePattern" value="${liferay.home}/logs/service-logs/scedule-cron-liferay-%d{yyyy-MM-dd}.log" />
+        </rollingPolicy>
+
+        <layout class="org.apache.log4j.EnhancedPatternLayout">
+            <param name="ConversionPattern" value="%d{yyyy-MM-dd HH:mm:ss.SSS} %-5p [%t][%c{1}:%L] %m%n" />
+        </layout>
+    </appender>
+    
+    <category name="packagename" additivity="false"> 
+    	<level value="DEBUG" />
+    	<appender-ref ref="FILE" />
+    </category>
+ 
+</log4j:configuration>

@@ -1,0 +1,32 @@
+dependencies {
+	compileOnly group: "com.liferay", name: "com.liferay.asset.taglib"
+	compileOnly group: "com.liferay", name: "com.liferay.comment.taglib"
+	compileOnly group: "com.liferay", name: "com.liferay.frontend.taglib"
+	compileOnly group: "com.liferay", name: "com.liferay.frontend.taglib.dynamic.section"
+	compileOnly group: "com.liferay", name: "com.liferay.frontend.taglib.form.navigator"
+	compileOnly group: "com.liferay", name: "com.liferay.frontend.taglib.util"
+	compileOnly group: "com.liferay", name: "com.liferay.journal.taglib"
+	compileOnly group: "com.liferay", name: "com.liferay.layout.taglib"
+	compileOnly group: "com.liferay", name: "com.liferay.site.taglib"
+	compileOnly group: "com.liferay.portal", name: "com.liferay.portal.kernel"
+	compileOnly group: "com.liferay.portal", name: "com.liferay.util.taglib"
+	compileOnly group: "javax.portlet", name: "portlet-api"
+	compileOnly group: "javax.servlet", name: "javax.servlet-api"
+	compileOnly group: "jstl", name: "jstl"
+	compileOnly group: "org.osgi", name: "org.osgi.service.component.annotations"
+
+	cssBuilder group: "com.liferay", name: "com.liferay.css.builder", version: "3.0.2"
+	
+	compileOnly project(":modules:insta:insta-api")
+	// https://mvnrepository.com/artifact/javax.mail/mail
+	implementation group: 'javax.mail', name: 'mail', version: '1.4'
+	
+	compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.14.1'
+  	compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.14.1'
+  	
+  	compileOnly group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.25'
+  	
+  	// https://mvnrepository.com/artifact/log4j/apache-log4j-extras
+	implementation group: 'log4j', name: 'apache-log4j-extras', version: '1.2.17'
+	
+}

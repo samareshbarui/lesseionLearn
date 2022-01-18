@@ -1,0 +1,4 @@
+Bundle-Name: Schedule-Cron
+Bundle-SymbolicName: Schedule.Cron
+Bundle-Version: 1.0.0
+Export-Package: Schedule.Cron.constants
