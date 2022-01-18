@@ -1,0 +1,10 @@
+Bundle-Name: auto-translator-service
+Bundle-SymbolicName: com.liferay.demo.auto.translate.service
+Bundle-Version: 1.0.0
+Import-Package:\
+!android.util.*,\
+\
+*
+Export-Package: \
+	com.liferay.demo.auto.translate.api,\
+	com.liferay.demo.auto.translate.service
